@@ -1,2 +1,0 @@
-# WaliStop
-SiteWeb Jawad Hirson
