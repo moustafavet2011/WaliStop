@@ -217,5 +217,6 @@ mail('husseinyazane19@gmail.com', 'Contact Form', $content, $headers);
 
 
     <script type="text/javascript" src="./Js/main.js"></script>
+    
 </body>
 </html>
