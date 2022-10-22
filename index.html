@@ -130,12 +130,12 @@ mail('husseinyazane19@gmail.com', 'Contact Form', $content, $headers);
                         <h2>Entrez Votre Contact Information</h2>
                         <div class="field">
                         <i class="fa-solid fa-user"></i>
-                        <input class="user" type="text" name="last-name"  id="last-name" placeholder="Votre Nom" value="<?php if(isset($lastName)) {echo $lastName;} ?>" required>
+                        <input class="user" type="text" name="last-name"  id="last-name" placeholder="Votre Nom" <!--value="<?php if(isset($lastName)) {echo $lastName;} ?>"--> required>
                         </div>
                         <br><br>
                         <div class="field">
                         <i class="fa-solid fa-user"></i>
-                        <input class="user" type="text" name="first-name"  id="first-name" placeholder="Votre Prenom"value="<?php if(isset($firstName)) {echo $firstName;} ?>" required>
+                        <input class="user" type="text" name="first-name"  id="first-name" placeholder="Votre Prenom"<!--value="<?php if(isset($firstName)) {echo $firstName;} ?>"--> required>
                         </div>
                         <br><br>
                         <div class="radio">
@@ -146,17 +146,17 @@ mail('husseinyazane19@gmail.com', 'Contact Form', $content, $headers);
                         <br><br>
                         <div class="field">
                         <i class="fa-solid fa-envelope"></i>
-                        <input class="mail" type="email" name="mail" id="email" placeholder="Votre E-Mail Address" value="<?php if(isset($mail)) {echo $mail;} ?>" required>
+                        <input class="mail" type="email" name="mail" id="email" placeholder="Votre E-Mail Address"<!-- value="<?php if(isset($mail)) {echo $mail;} ?>"--> required>
                         </div>
                         <br><br>
                         <div class="field">
                         <i class="fa-solid fa-phone"></i>
-                        <input class="phone" type="text" name="phone" id="phone" placeholder="Votre Phone Number" value="<?php if(isset($phone)) {echo $phone;} ?>" required>
+                        <input class="phone" type="text" name="phone" id="phone" placeholder="Votre Phone Number"<!-- value="<?php if(isset($phone)) {echo $phone;} ?>"--> required>
                         </div>
                         <br><br>
                         <div class="field">
                         <i class="fa-solid fa-house"></i>
-                        <input class="address" type="text" id="address" name="address" placeholder="Votre Address" value="<?php if(isset($address)) {echo $address;} ?>">
+                        <input class="address" type="text" id="address" name="address" placeholder="Votre Address"<!-- value="<?php if(isset($address)) {echo $address;} ?>"-->>
                         </div>
                         &nbsp;&nbsp;&nbsp;
 
