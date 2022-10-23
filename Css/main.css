@@ -11,14 +11,15 @@
 /* End Global Rules */
 body{
     font-family:"cairo", sans-serif;
-    margin-left: 15px;
+}
+@media (max-width: 768px){
+body{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
 }
 
-/* @media(max-width:767px){
-    body{
-        margin-left: 28px;
-    }
-} */
 *{
     --webkit-box-sizing: border-box;
     --moz-box-sizing: border-box;
@@ -46,6 +47,7 @@ a{
     .container{
         width: 750px;
 
+
     }
 }
 /* Medium Screen */
@@ -63,10 +65,14 @@ a{
 /* Start Header */
 .header{
     background-color: white;
-  /*  --webkit-box-shadow: 0 0 10px #ddd;
+    --webkit-box-shadow: 0 0 10px #ddd;
     --moz-box-shadow: 0 0 10px #ddd;
     box-shadow: 0 0 10px #ddd;
-    */
+}
+@media(max-width:767px){
+    .header{
+        box-shadow: none;
+    }
 }
 
 .header .container{
@@ -77,6 +83,11 @@ a{
     position: relative;
     transition: var(--main-transition);
 }
+/* @media(max-width:767px){
+    .header .container{
+        margin-left: -40px;
+    }
+} */
 
 .header .logo{
     position: relative;
@@ -134,9 +145,8 @@ a{
 .header .main-nav > li > a::before{
     content: "";
     position: absolute;
-    bottom: 80px;
+    bottom: 0;
     left: -100%;
-    top: 0;
     height: 3px;
     background-color: var(--main-color);
     width: 100%;
@@ -379,7 +389,8 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-}@media(max-width:767px){
+}
+@media(max-width:767px){
     .contact .container{
         display: flex;
         justify-content: center;
@@ -387,6 +398,7 @@ a{
         flex-wrap: wrap;
         flex-direction: column;
     }
+
     .contact .container form{
         display: flex;
         justify-content: center;
@@ -421,15 +433,15 @@ a{
     transition: var(--main-transition);
 }
 .contact .container .contact-form form h2::before{
-    left: -25px;
+    left: -10px;
 }
 .contact .container .contact-form form h2::after{
-    right: -25px;
+    right: -10px;
 }
 .contact .container .contact-form form h2:hover::before,
 .contact .container .contact-form form h2:hover::after{
     height:calc(100% + 1px);
-    width:calc(50% + 25px);
+    width:calc(50% + 10px);
 
 }
 .contact .container .contact-form form i{
