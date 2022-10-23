@@ -63,9 +63,10 @@ a{
 /* Start Header */
 .header{
     background-color: white;
-    --webkit-box-shadow: 0 0 10px #ddd;
+  /*  --webkit-box-shadow: 0 0 10px #ddd;
     --moz-box-shadow: 0 0 10px #ddd;
     box-shadow: 0 0 10px #ddd;
+    */
 }
 
 .header .container{
