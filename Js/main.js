@@ -254,13 +254,29 @@ function isValid() {
 
     //show the devis container div
 
-    //get the main button 
+    //get the main button
     let devBtn = document.getElementById("get-devis");
-    
+
     //add click function to show the dev
     devBtn.addEventListener("click", function(){
         //add class active to the info div
         let infoDev = document.querySelector(".info");
-        
-        infoDev.classList.add("active");
+
+        infoDev.classList.toggle("active");
+    });
+
+    //slider Animation
+
+    //Get the variables for the elements
+    var $slider = document.getElementById("slider");
+    var $toggle = document.getElementById("toggle");
+    var $sliderSpan = document.getElementById("urgent-span");
+
+    $toggle.addEventListener("click", function(){
+        //var $isOpen = $slider.classList.contains("slide-in");
+        $sliderSpan.classList.toggle("active");
+
+        //set the attribute to the element's value'
+
+        //$slider.setAttribute("class", $isOpen ? "slide-out" : "slide-in");
     });
