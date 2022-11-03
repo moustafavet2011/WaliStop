@@ -365,9 +365,7 @@ display: none;
 
     }
 }
-.about-us .container .box:hover{
-    top: -30px;
-}
+
 
 .about-us .container .box  img{
     margin: 0;
@@ -420,6 +418,17 @@ display: none;
     color: #777;
     margin: 20px;
     padding: 14px;
+}
+.about-us .container .box .content .text-more-less.hide{
+    display: none;
+}
+.about-us .container .box .content .more-btn{
+    margin-top: 0px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
 }
 /* End About us */
 
