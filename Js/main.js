@@ -48,22 +48,18 @@ paginationSpan.appendChild(paginationElement);
 
 // Get the new created pagination Ul
 var paginationUl = document.getElementById("pagination-ul");
-// for (var i = 0; i <= sliderCount; i++) {
-//     setInterval(function sliderCount(){
-//         theChecker();
-//     },3000);
-// }
+
 //get an array from the pagination element
 var paginationBullets = Array.from(paginationUl.children);
 
-//loop through all the bullets 
+//loop through all the bullets
 for(var i = 0 ; i< paginationBullets.length ; i++) {
     paginationBullets[i].onclick = function() {
 
         //make the current slide number equal to the clicked bullet using the data-index attribute
         currentSlide = parseInt(this.getAttribute("data-index"));
 
-        //call the checker function 
+        //call the checker function
         theChecker();
     }
 }
@@ -81,25 +77,19 @@ function nextSlide(){
         theChecker();
     }
 }
-
 //function to control previous buttons
 function prevSlide(){
     if(prevButton.classList.contains("disabled")){
         //do Nothing
         return false;
     }else{
-        
         currentSlide--;
         theChecker();
     }
 }
-//function to 
-
-
 //create the checker function
 function theChecker(){
-
-    // Write the number of the slide into the slide element 
+    // Write the number of the slide into the slide element
     slideNumber.textContent = "Slide #" + (currentSlide) + " De " + (sliderCount);
     //Trigger the remove all active class function
     removeAllActive();
@@ -107,7 +97,6 @@ function theChecker(){
     sliderImages[currentSlide - 1].classList.add("active");
     //add the active class to the current pagination bullet
     paginationUl.children[currentSlide -1].classList.add("active");
-
         //check if the current slide is the first slide
         if(currentSlide== 1){
             prevButton.classList.add("disabled");
@@ -124,22 +113,18 @@ function theChecker(){
             nextButton.classList.remove("disabled");
         }
 }
-
-
 //function to remove all active class from the current images and pagination bullets
 function removeAllActive(){
     //loop through the images to remove the active class from
     sliderImages.forEach(function(img){
                 //remove the active class to the current image
         img.classList.remove("active");
-
     });
     //loop through the pagination bullets to remove the active class from
     paginationBullets.forEach(function(bullet){
         //remove the active class to the current pagination bullet
         bullet.classList.remove("active");
     });
-
 }
 /*
 //Start The Contact Form
@@ -193,7 +178,7 @@ function fieldValidation(field, validationFunction){
 //create the validation central validationFunction
 function isValid() {
     var valid = true;
-    
+
     valid &= fieldValidation(fields.firstName, isNotEmpty);
     valid &= fieldValidation(fields.lastName, isNotEmpty);
     valid &= fieldValidation(fields.genre, isNotEmpty);
@@ -238,9 +223,9 @@ function isValid() {
         function sendEmail(){
             Email.send({
                 Host : "smtp.gmail.com",
-                Username : "husseinyazane19@gmail.com",
-                Password : "Mh0105026525",
-                To : 'husseinyazane19@gmail.com',
+                Username : "",
+                Password : "",
+                To : '',
                 From : document.getElementById("email").value,
                 Subject : "Nouveau Contact",
                 Body : "Name : " + document.getElementById("last-name").value + document.getElementById("first-name").value + "<br> Email : "+ document.getElementById("email").value
@@ -251,55 +236,42 @@ function isValid() {
                 message => alert("Merci Pour Votre Message On Va vous Repondre BienTôt")
             );
     }
-
     //show the devis container div
-
     //get the main button
     let devBtn = document.getElementById("get-devis");
-
     //add click function to show the dev
     devBtn.addEventListener("click", function(){
         //add class active to the info div
         let infoDev = document.querySelector(".info");
-
         infoDev.classList.toggle("active");
     });
-
     //slider Animation
-
     //Get the variables for the elements
     var $slider = document.getElementById("slider");
     var $toggle = document.getElementById("toggle");
     var $sliderSpan = document.getElementById("urgent-span");
-
     $toggle.addEventListener("click", function(){
         //var $isOpen = $slider.classList.contains("slide-in");
         $sliderSpan.classList.toggle("active");
-
         //set the attribute to the element's value'
-
         //$slider.setAttribute("class", $isOpen ? "slide-out" : "slide-in");
     });
-
-
-
-
     //read more or less function
-    function toggle(button){
-
-        const showMore = document.querySelectorAll(".text-more-less");
-        const buttons = document.querySelectorAll(".more-btn");
-
-        for(let i = 0; i < showMore.length; i++){
-            showMore[i].classList.toggle("hide");
-        }
-        for(let i = 0; i < buttons.length; i++){
-            if(showMore[i].classList.contains("hide")){
-                buttons[i].innerHTML="Lire Plus";
-            }
-            else{
-                buttons[i].innerHTML="Lire Moin";
-            }
+    function readMore(info){
+        let dots = document.querySelector(`.content[data-info = '${info}'] .dots`);
+        console.log(dots);
+        let moreText = document.querySelector(`.content[data-info = '${info}'] .text-more-less`);
+        console.log(moreText);
+        let moreBtn = document.querySelector(`.content[data-info = '${info}'] .more-btn`);
+        console.log(moreBtn);
+        if(dots.style.display === 'none'){
+            dots.style.display = 'inline';
+            moreBtn.innerHTML= 'Lire Plus';
+            moreText.style.display='none';
+        }else{
+            dots.style.display = 'none';
+            moreBtn.innerHTML= 'Lire Moin';
+            moreText.style.display='inline';
         }
     }
 
