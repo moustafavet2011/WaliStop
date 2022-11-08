@@ -180,7 +180,7 @@ a{
     border-radius: 5px;
     border: none;
     padding: 5px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .header .container .tel span{
@@ -664,6 +664,9 @@ display: none;
         transform: translateX(-12%);
     }
 }
+.footer .content img{
+    max-width: 100%;
+}
 .footer .content h2{
     justify-content: flex-start;
     font-size: 25px;
@@ -723,6 +726,11 @@ display: none;
 }
 .footer .container .copyright span{
     font-weight: bold;
+}
+.footer .container .copyright span strong{
+    color: #39b5fe;
+    font-size: 21px;
+    font-weight: 900;
 }
 /* End Footer */
 
