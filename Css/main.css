@@ -162,13 +162,16 @@ a{
     right: 33px;
     bottom: 17px;
     background-color: #eee;
+    border-radius:6px;
 }
 @media(max-width:767px){
     .header .container .tel{
         margin: 3px 45px 19px 50px;
     }
 }
-
+.header .container .tel p{
+    margin-left: 5px;
+}
 .header .container .tel button{
     margin-left: 5px;
     margin: 0 5px;
@@ -187,6 +190,7 @@ display: none;
 }
 .header .container .tel span.active{
     display: inline-block;
+    margin-top: 15px;
     animation: slide 2s forwards;
 }
 
