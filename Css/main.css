@@ -360,8 +360,9 @@ display: none;
     background-color: #eee;
     border: 1px solid #eee;
     border-radius: 10px;
+    margin: 20px 0;
     box-shadow: 0 0 10px #ddd;
-    transition: position 2s;
+    transition: transform 0.5s, margin-top 0.5s;
 }
 @media(max-width:767px) {
     .about-us .container .box{
@@ -369,6 +370,10 @@ display: none;
         margin-top: 10px;
 
     }
+}
+.about-us .container .box:hover{
+    transform: scale(1.1);
+    margin-top: -10px;
 }
 .about-us .container .box  img{
     margin: 0;
