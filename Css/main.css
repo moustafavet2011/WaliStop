@@ -68,6 +68,7 @@ a{
     --webkit-box-shadow: 0 0 10px #ddd;
     --moz-box-shadow: 0 0 10px #ddd;
     box-shadow: 0 0 10px #ddd;
+    transition: 0.3s;
 }
 @media(max-width:767px){
     .header{
@@ -95,6 +96,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .header .logo > img{
     max-width:100%;
@@ -108,7 +110,7 @@ a{
         justify-content: center;
         align-items: center;
         height: 150px;
-        margin-bottom: 25px;
+        margin-bottom: 50px;
     }
 }
 .header .main-nav{
@@ -181,6 +183,7 @@ a{
     border: none;
     padding: 5px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .header .container .tel span{
@@ -196,7 +199,7 @@ display: none;
 }
 
 /* End Header */
-/* Start Landing */
+/* Start Landing
 .landing{
     padding-top: var(--main-padding-top);
     padding-bottom: var(--main-padding-bottom);
@@ -321,7 +324,165 @@ display: none;
     background-color: #009668;
     color: #fff;
 }
-/* End Landing */
+ End Landing */
+ /* Start New Landing */
+.landing{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.landing .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:767px){
+    .landing .container{
+        flex-wrap: wrap;
+    }
+}
+
+.landing .content h2{
+    text-align: center;
+    font-size: 45px;
+    margin: 0 15px 10px;
+    padding: 0 15px;
+}
+.landing .content p{
+    font-size: 20px;
+    line-height: 1.8;
+    font-weight: 500;
+    margin: 20px 15px 10px;
+}
+.landing .content p a{
+    background-color: #ddd;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 0 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.landing .content p a:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+.landing .content p .numero{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+.landing .content .devis a{
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: 20px 10px;
+    transition: 0.3s;
+}
+.landing .content .devis a:hover{
+    background-color: var(--main-alt-color);
+    transform: scale(1.1);
+}
+.landing .landing-image{
+    border-radius: 15px;
+    --webkit-box-shadow: 4px 3px 2px 2px rgb(0 0 0 / 20%);
+    box-shadow: 4px 3px 2px 2px rgb(0 0 0 / 20%);
+}
+.landing .landing-image img{
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+}
+@media(max-width:767px){
+    .landing .landing-image img{
+        max-width: 100%;
+    }
+    }
+ /* End New Landing */
+ /* start skills */
+.skills{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.skills .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 30px;
+}
+@media(max-width:767px){
+    .skills .container{
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
+.skills .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:767px){
+    .skills .box{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.skills .box i{
+    margin-right: 5px;
+    font-size: 50px;
+    color: var(--toastify-icon-color-success);
+}
+@media(max-width:767px){
+    .skills .box i{
+        margin-bottom: 10px;
+    }
+}
+.skills .box .info{
+    flex-grow: 1;
+}
+.skills .box .info h3{
+    margin: 0;
+    font-size: 25px;
+}
+.skills .box .info p{
+    margin: 0 5px;
+    color: #777;
+    line-height: 1.5;
+}
+@media(max-width:767px){
+    .skills .box .info h3{
+        margin: 10px 0px;
+    }
+    .skills .box .info p{
+        margin: 5px 20px;
+    }
+}
+.skills .box .info span{
+    font-size: 13px;
+    margin-left: 7px;
+}
+.skills .box .info .dark-star{
+    color: #eee;
+}
+.skills .box img{
+    max-width: 100%;
+    transition: 0.3s;
+}
+@media(max-width:767px){
+    .skills .box img{
+        display: none;
+    }
+}
+.skills .box img:hover{
+    transform: scale(1.5);
+
+}
+ /* End skills */
 /* Start About us */
 .about-us{
     padding-top: var(--main-padding);
@@ -337,15 +498,16 @@ display: none;
 .about-us .title{
     text-align: center;
     margin: 50px auto;
-    border: 1px solid #333;
+    border: 1px solid var(--main-color);
     width: fit-content;
-    padding: 25px;
-    font-size: 30px;
+    padding: 20px 10px;
+    font-size: 20px;
     background-color: var(--main-color);
     color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px #ddd;
     transition: var(--main-transition);
+    cursor: pointer;
 }
 .about-us .title:hover{
     background-color: var(--main-alt-color);
