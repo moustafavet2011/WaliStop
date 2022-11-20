@@ -59,14 +59,14 @@ mail('husseinyazane19@gmail.com', 'Contact Form', $content, $headers);
                     <li><a href="#contact">CONTACT</a></li>
                     <li><a href="#devis">DEVIS</a></li>
                 </ul>
-                <div id="slider" class="tel slide-in"><p>En cas d'urgence : </p><button id="toggle"> Appelez nous </button>
-                    <span id="urgent-span">+33 06 58 01 10 58</span>
+                <div id="slider" class="tel slide-in"><p>En cas d'urgence : </p><button id="toggle" > Appelez nous </button>
+                    <span id="urgent-span" class="active">+33 06 58 01 10 58</span>
                 </div>
             </div>
         </div>
         <!-- End Header -->
         <!-- Start Landing -->
-        <div class="landing">
+        <!-- <div class="landing">
             <div class="container">
                 <div class="slider-box">
                     <div class="slider-number" id="slider-number"></div>
@@ -84,8 +84,68 @@ mail('husseinyazane19@gmail.com', 'Contact Form', $content, $headers);
                     <span id="next" class="next">Suivant</span>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- End Landing -->
+        <!--Start New Landing-->
+        <div class="landing">
+            <div class="container">
+                <div class="content">
+                    <h2>Traitement de tout sort de nuisible 7j/7</h2>
+                    <p>Votre confort est notre but nous nous déplaçons partout dans le Nord - Aisne - Oise - Pas-de-calais - Somme.
+
+                        Intervention 24/24 7/7 Rapide est efficace n'histez pas de prendre <a href="#contact">contact</a>et dite Nous votre problem ou appelez nous direct à <span class="numero">06 58 01 10 58</span></p>
+                    <div class="devis">
+                        <a href="#devis">Faire un DEVIS</a>
+                    </div>
+                </div>
+                <div class="landing-image">
+                    <img src="./Images/new-landing.jpg" alt="landing">
+                </div>
+            </div>
+        </div>
+        <!--End New Landing-->
+        <!--Start Skills-->
+        <div class="skills">
+            <div class="container">
+                <div class="box">
+                    <i class="fa-solid fa-house-chimney fa-2x"></i>
+                    <div class="info">
+                        <h3>Efficacité</h3>
+                        <p>Nous pouvons vous assurer que notre traitement est efficace à 100% et la fin de vos ennuis</p>
+                        <span> 5/5 &#11088; &#11088; &#11088; &#11088; &#11088;</span>
+                    </div>
+                    <img src="./Images/efficacity.png" alt="photo">
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-truck-fast fa-2x"></i></i>
+                    <div class="info">
+                        <h3>Intervention rapide</h3>
+                        <p>Après avoir détecté le problème, nous agissons très rapidement pour le résoudre une fois pour toutes</p>
+                        <span> 4/5 &#11088; &#11088; &#11088; &#11088;</span>
+                    </div>
+                    <img src="./Images/intervention-rapid.png" alt="photo">
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-business-time fa-2x"></i>
+                    <div class="info">
+                        <h3>Horaire Flexible</h3>
+                        <p>Nous essayons de nous adapter au mieux pour satisfaire nos clients</p>
+                        <span> 4/5 &#11088; &#11088; &#11088; &#11088;</span>
+                    </div>
+                    <img src="./Images/horaire-flexible.png" alt="photo">
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-headset fa-2x"></i>
+                    <div class="info">
+                        <h3>Services Clients</h3>
+                        <p>Nous faisons tout ce que nous pouvons pour répondre à vos questions et tracer votre problème s'il est résolu ou non</p>
+                        <span> 5/5 &#11088; &#11088; &#11088; &#11088; &#11088;</span>
+                    </div>
+                    <img src="./Images/service-client.png" alt="photo">
+                </div>
+            </div>
+        </div>
+        <!--End skills-->
         <!-- Start About Us -->
         <div class="about-us" id="about-us">
             <h2 class="title">À PROPOS DE NOUS</h2>
@@ -117,7 +177,7 @@ mail('husseinyazane19@gmail.com', 'Contact Form', $content, $headers);
                     </div>
                 </div>
                 <div class="box">
-                    <img class="image-4" src="./Images/punaise de lit.png" alt="" />
+                    <img class="image-4" src="./Images/time.png" alt="" />
                     <div class="content" data-info="div-4">
                         <h2>Horaires d'ouverture</h2>
                         <p>Pour votre confort nous nous déplaçons à<span class="dots">...</span></span> <span class="text-more-less hide" id="Span-4"> toute heure de la journée et de la soirée.
@@ -154,7 +214,7 @@ mail('husseinyazane19@gmail.com', 'Contact Form', $content, $headers);
                     </div>
                 </div>
                 <div class="box">
-                    <img class="image-1" src="./Images/a propos_4.jpg" alt="" />
+                    <img class="image-1" src="./Images/punaise de lit.png" alt="" />
                     <div class="content" data-info="div-8">
                         <h2>Maîtrises des nuisibles</h2>
                         <p>Il s'agit de l'un des services les plus demandés,
@@ -170,8 +230,8 @@ mail('husseinyazane19@gmail.com', 'Contact Form', $content, $headers);
             <div class="container">
                 <div class="content">
                     <button class="get-devis" type="submit" id="get-devis">Devis gratuit</button>
-                    <div class="info">
-                        <h3>Devis gratuit pour vos</h3>
+                    <div class="info active">
+                        <h3>Devis téléphonique gratuit pour vos</h3>
                         <p>Nous vous proposerons un devis gratuit correspondant à votre situation et pour faire de notre mieux, pour cela nous avons besoin d'avoir plus de précisions vous pouvez nous appeler au <strong>06 58 01 10 58</strong> nous sommes disponibles 24h/24h, 7j/7j. Merci pour votre intérêt notre but est de vous satisfaire</p>
                     </div>
                 </div>
@@ -226,7 +286,7 @@ mail('husseinyazane19@gmail.com', 'Contact Form', $content, $headers);
                         <input type="checkbox" id="newslettre">Recevoir notre newsletters et les dernières options
                         <br><br>
                         </div>
-                        <textarea class="msg" name="message" id="text" placeholder="Dites Nous Votre Demande"></textarea>
+                        <textarea class="msg" name="message" id="text" placeholder="Décrivez-nous votre problème"></textarea>
                         <br><br>
                         <button type="submit">Submit</button>
                     </form>
