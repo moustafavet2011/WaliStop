@@ -1,5 +1,5 @@
 // Get the image form the slider container
-var sliderImages = Array.from(document.querySelectorAll(".slider-box img"));
+/*var sliderImages = Array.from(document.querySelectorAll(".slider-box img"));
 
 // Get the number of slides 
 var sliderCount = sliderImages.length;
@@ -125,7 +125,7 @@ function removeAllActive(){
         //remove the active class to the current pagination bullet
         bullet.classList.remove("active");
     });
-}
+}*/
 /*
 //Start The Contact Form
 //Create an object to collect all the data
