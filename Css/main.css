@@ -435,7 +435,7 @@ display: none;
 .skills .box i{
     margin-right: 5px;
     font-size: 50px;
-    color: var(--toastify-icon-color-success);
+    color: #00b2a9;;
 }
 @media(max-width:767px){
     .skills .box i{
