@@ -390,12 +390,13 @@ display: none;
 }
 @media(max-width:767px){
     .about-us .title{
-        margin: 10px auto;
+        margin: 30px auto;
     }
 }
 .about-us .title:hover{
     background-color: var(--main-alt-color);
     border-color: var(--main-alt-color);
+    transform: scale(1.1);
 }
 .about-us .container .box{
     display: flex;
@@ -413,13 +414,19 @@ display: none;
 @media(max-width:767px) {
     .about-us .container .box{
         width: 365px;
-        margin-top: 10px;
+        margin-top: 0;
 
     }
 }
 .about-us .container .box:hover{
     transform: scale(1.1);
     margin-top: -10px;
+}
+@media(max-width:767px){
+    .about-us .container .box:hover{
+        transform: scale(1);
+        margin-top: 0;
+    }
 }
 .about-us .container .box  img{
     width: 100%;
@@ -530,6 +537,10 @@ display: none;
     margin: 40px 0 100px;
     transition: var(--main-transition);
 }
+.devis .container .get-devis:hover{
+    transform: scale(1.1);
+    background-color: var(--main-color);
+}
 @media(max-width:767px){
     .devis .container .get-devis{
         margin: 10px 0 40px;
@@ -637,6 +648,12 @@ display: none;
     border-radius: 6px;
     padding: 10px 15px;
     margin: 10px;
+}
+@media(max-width:767px){
+    .services .services-boxs .services-box span{
+        padding: 5px 10px;
+        margin: 5px;
+    }
 }
 /* End Services */
 /* Start Contact */
@@ -794,6 +811,13 @@ display: none;
 .footer .content img{
     max-width: 100%;
 }
+@media(max-width:767px){
+    .footer .content .photo{
+        max-width: 100%;
+        width: 200px;
+        height: 100px;
+    }
+}
 .footer .content h2{
     justify-content: flex-start;
     font-size: 25px;
@@ -830,7 +854,8 @@ display: none;
 .footer .details{
     display: flex;
     flex-direction: column;
-    margin: 25px 25px;
+    margin: 100px 25px;
+    text-align: center;
 }
 @media(max-width:767px){
     .footer .details{
@@ -855,6 +880,7 @@ display: none;
         max-width: 100%;
         left: calc(50% - 30px);
         transform: translateX(-50%);
+        margin-top: -15px;
     }
 }
 .footer .container .copyright span{
